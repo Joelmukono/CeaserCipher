@@ -22,5 +22,12 @@ public class CipherTestClass {
         assertEquals(3,newCipher.getKeyint());
     }
 
+    @Test
+    public void keySetter_setKey_returnInt(){
+        Cipher newCipher = new Cipher("hello",8);
+        assertEquals(8,newCipher.setKey(8));
+
+    }
+
 
 }
