@@ -29,5 +29,11 @@ public class CipherTestClass {
 
     }
 
+    @Test
+    public void textSetter_setText_returnText(){
+        Cipher newCipher = new Cipher("hello",9);
+        assertEquals("hello",newCipher.setString("hello"));
+    }
+
 
 }
