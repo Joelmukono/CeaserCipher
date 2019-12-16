@@ -37,8 +37,8 @@ public class CipherTestClass {
 
     @Test
     public void encrypt_encryptText_textEncrypted(){
-        Cipher newCipher = new Cipher("hello",8);
-        assertEquals("text",newCipher.encryptText());
+        Cipher newCipher = new Cipher("CDE",2);
+        assertEquals("EFG",newCipher.encryptText());
     }
 
 
