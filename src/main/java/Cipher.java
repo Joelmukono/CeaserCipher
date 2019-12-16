@@ -29,8 +29,39 @@ class Cipher{
     }
 
     public String encryptText(){
+        String encryptText = ""; //empty string to store the encrypted text
+        for(int i=0;i<textToEncrypt.length();i++){ // loop through text input to process for encryption
+            char character = textToEncrypt.charAt(i);//find each characters index position
 
-        return null;
+            if(Character.isLetter(character)){ //check if the character at index is a letter.
+
+                if(Character.isLowerCase(character)){ //check if character at index is in lowercase
+                    char newChar = (char)(character+keyValue); //
+                     if( newChar<'z'){
+                         encryptText += (char)( character -(26-keyValue));
+
+                     }else {
+                         encryptText+=character;
+                     }
+
+
+                }else if(Character.isUpperCase(character)){
+                    char newChar = (char)(character+keyValue);
+                    if( newChar<'Z'){
+                        encryptText += (char)( character -(26-keyValue));
+
+                    }else {
+                        encryptText+=character;
+                    }
+
+                }
+
+            }else {
+                encryptText+=character;
+            }
+        }
+
+        return encryptText;
 
     }
 
