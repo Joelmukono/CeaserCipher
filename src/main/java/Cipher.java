@@ -4,7 +4,9 @@ class Cipher{
     private int keyValue;
     private String encryptText = "";
 
+    public Cipher(){
 
+    }
 
     public Cipher(String text,int key){
         this.textToEncrypt = text;

@@ -41,5 +41,12 @@ public class CipherTestClass {
         assertEquals("EFG",newCipher.encryptText());
     }
 
+    @Test
+    public void decrypt_decryptText_textDecription(){
+        Cipher newCipher = new Cipher("lmn",2);
+        newCipher.encryptText();
+        assertEquals("lmn",newCipher.decryptText());
+    }
+
 
 }
