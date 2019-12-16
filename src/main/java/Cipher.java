@@ -23,5 +23,9 @@ class Cipher{
 
     }
 
+    public String setString(String strings){
+        return this.textToEncrypt = strings;
+    }
+
 }
 
