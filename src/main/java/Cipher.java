@@ -14,5 +14,9 @@ class Cipher{
         return this.textToEncrypt;
     }
 
+    public int getKeyint(){
+        return this.keyValue;
+    }
+
 }
 
