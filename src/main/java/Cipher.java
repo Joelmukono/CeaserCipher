@@ -18,5 +18,10 @@ class Cipher{
         return this.keyValue;
     }
 
+    public int setKey(int key){
+        return this.keyValue = key;
+
+    }
+
 }
 
