@@ -35,5 +35,11 @@ public class CipherTestClass {
         assertEquals("hello",newCipher.setString("hello"));
     }
 
+    @Test
+    public void encrypt_encryptText_textEncrypted(){
+        Cipher newCipher = new Cipher("hello",8);
+        assertEquals("text",newCipher.encryptText());
+    }
+
 
 }
