@@ -10,5 +10,11 @@ public class CipherTestClass {
         assertEquals(true, newCipher instanceof Cipher);
     }
 
+    @Test
+    public void stringTest_getStringTest_returnText(){
+        Cipher newCipher = new Cipher("text",2);
+        assertEquals("text",newCipher.getText());
+    }
+
 
 }
