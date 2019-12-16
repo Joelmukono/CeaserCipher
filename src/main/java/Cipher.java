@@ -27,5 +27,24 @@ class Cipher{
         return this.textToEncrypt = strings;
     }
 
+    public String encryptText(){
+        String textEncrypted = "";
+        for(int i=0;i<=textToEncrypt.length();i++) {
+            char characterAtPosition = textToEncrypt.charAt(i);
+            if (Character.isLowerCase(characterAtPosition)) {
+                char convertedString = (char) (characterAtPosition + keyValue);
+                textEncrypted+= convertedString;
+
+            } else if(Character.isUpperCase(characterAtPosition)) {
+                char convertedString = (char) (characterAtPosition + keyValue);
+                textEncrypted += convertedString;
+
+            }
+
+        }
+        return textEncrypted;
+
+    }
+
 }
 
