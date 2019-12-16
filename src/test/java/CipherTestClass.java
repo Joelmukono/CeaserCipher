@@ -16,5 +16,11 @@ public class CipherTestClass {
         assertEquals("text",newCipher.getText());
     }
 
+    @Test
+    public void intText_getNumber_returnInt(){
+        Cipher newCipher = new Cipher("hello",3);
+        assertEquals(3,newCipher.getKeyint());
+    }
+
 
 }
