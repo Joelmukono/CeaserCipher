@@ -10,5 +10,9 @@ class Cipher{
 
     }
 
+    public String getText(){
+        return this.textToEncrypt;
+    }
+
 }
 
